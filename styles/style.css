@@ -77,10 +77,10 @@ ol {
 .search-form {
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
   gap: 40px;
   align-self: flex-start;
   width: 100%;
-  align-items: flex-end;
 }
 
 .content__details {
@@ -92,18 +92,18 @@ ol {
 }
 
 .content__list-container {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 30px;
   height: 298px;
   overflow: auto;
-  position: relative;
 }
 
 .result__video-container {
+  position: relative;
   max-width: 712px;
   object-fit: cover;
-  position: relative;
 }
 
 .result__video {
@@ -278,16 +278,16 @@ input {
 }
 
 .button {
-  background-color: transparent;
-  color: #fff;
+  height: 34px;
   border: 1px solid #fff;
+  color: #fff;
   font-family: Fira Sans Condensed;
   font-weight: 700;
   font-size: 18px;
   line-height: 22px;
   letter-spacing: 0%;
   text-align: center;
-  height: 34px;
+  background-color: transparent;
   cursor: pointer;
 }
 
@@ -305,8 +305,8 @@ input {
 }
 
 .search-form__submit-button {
-  max-width: 194px;
   width: 100%;
+  max-width: 194px;
  }
 
 .more-button {
