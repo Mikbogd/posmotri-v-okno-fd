@@ -90,20 +90,24 @@ ol {
   display: flex;
   flex-direction: column;
   gap: 30px;
+  width: 400px;
   height: 298px;
   overflow: auto;
 }
 
 .result__video-container {
   position: relative;
+  width: 100%;
   max-width: 712px;
-  object-fit: cover;
+  height: auto;
+  aspect-ratio: 712 / 386;
 }
 
 .result__video {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
 }
 
 .content__list {
@@ -124,11 +128,12 @@ ol {
 .content__video-card-thumbnail {
   min-width: 194px;
   height: 102px;
+  object-fit: cover;
 }
 
 
 .title {
-  font-family: Oswald;
+  font-family: 'Oswald', sans-serif;
   font-weight: 700;
   font-size: 75px;
   line-height: 94%;
@@ -142,12 +147,11 @@ ol {
 }
 
 .search-form__fieldset-title {
-  font-family: Fira Sans Condensed;
+  font-family: 'Fira Sans Condensed', sans-serif;
   font-weight: 400;
   font-size: 18px;
-  line-height: 100%;
+  line-height: 22px;
   letter-spacing: 0%;
-
 }
 
 .content__video-card-description-container {
@@ -157,8 +161,10 @@ ol {
 }
 
 .content__video-card-title {
+  max-width: 192px;
   overflow: hidden;
-  font-family: Oswald;
+  overflow: hidden;
+  font-family: 'Oswald', sans-serif;
   font-weight: 700;
   font-size: 30px;
   line-height: 100%;
@@ -171,7 +177,7 @@ ol {
 .content__video-card-description {
   display: -webkit-box;
   overflow: hidden;
-  font-family: Fira Sans Condensed;
+  font-family: 'Fira Sans Condensed', sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 16px;
@@ -200,7 +206,12 @@ ol {
   flex-direction: column;
   gap: 6px;
   width: 100%;
+  max-width: 225px;
   border: none;
+}
+
+.search-form__fieldset:nth-child(2) {
+  align-self: flex-start;
 }
 
 .search-form__label {
@@ -228,7 +239,7 @@ input {
   border-left: none;
   outline: none;
   color: #fff;
-  font-family: Fira Sans Condensed;
+  font-family: 'Fira Sans Condensed', sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 100%;
@@ -270,7 +281,7 @@ input {
   height: 34px;
   border: 1px solid #fff;
   color: #fff;
-  font-family: Fira Sans Condensed;
+  font-family: 'Fira Sans Condensed', sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 22px;
@@ -314,6 +325,9 @@ input {
   background-color: #545050;
 }
 
+.content__card-link:active {
+  background-color: #545050;
+ }
 
 .content__card-link:hover {
   text-decoration: underline;
