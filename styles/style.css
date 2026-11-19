@@ -288,10 +288,6 @@ input {
   cursor: pointer;
 }
 
-.button:hover {
-  text-decoration: underline;
-}
-
 .button:active {
   background-color: #545050;
 }
@@ -318,14 +314,12 @@ input {
   cursor: pointer;
 }
 
-.content__card-link_current {
+.content__card-link_current,
+.content__card-link:active {
   background-color: #545050;
 }
 
-.content__card-link:active {
-  background-color: #545050;
- }
-
+.button:hover,
 .content__card-link:hover {
   text-decoration: underline;
 }
